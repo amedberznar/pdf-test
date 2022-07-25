@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>پەرتووکخانا ئەکادیمیا قوتابی</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album-rtl/">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="images/Web-Logo.png" type="image/x-icon">
+
+
+
+
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="../assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+  <style>
+    .Front-Images {
+      border-radius: 20px;
+      height: 50%;
+    }
+
+    .Back-div-image {
+      border-radius: 20px;
+      margin: 10px 0px;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+
+    a {
+      text-decoration: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+
+
+      body {
+        background-image: url('../images/logo.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: 100%;
+
+      }
+    }
+
+
+
+  /* alert */
+
+  .alertButton {
+    border-radius: 50%;
+    border: none;
+    background: #f5c131;
+    color:white;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+  }
+
+
+  .swal-overlay {
+       backdrop-filter: blur(2px);
+       color: black;
+
+     }
+
+     .swal-modal {
+       // background-color:beige;
+       color: black;
+
+     }
+     .swal-title {
+       // background-color:beige;
+       color: black;
+
+     }
+
+     .swal-text {
+       //background-color:beige;
+       color: black;
+
+       text-align: right;
+     }
+
+     .swal-footer {
+       //background-color:beige;
+       color: black;
+
+     }
+
+     .swal-button {
+       color: black;
+     }
+
+     .swal-button--confirm {
+       color: black;
+       background-color: beige;
+     }
+
+
+  </style>
+
+
+<script>
+
+var xerhatin = "";
+
+function hello() {
+     swal({
+       title: 'داخوازی',
+       text: 'خواندەڤانێن هێژا ؛ ب هنارتنا کورتی و بەرگێن پەرتووکێن هەوە خواندی ژبو ژمارەیێن دەستنیشانکری د ناڤا مالپەرێ پەرتووکخانەیێ دا دێ پەرتووکخانەیا مە دەولەمەندکەن',
+       icon: 'warning', //there are four predefined icons("warning", "error", "success" and "info")
+       buttons: ['❌', '✔️'],
+       closeOnEsc: false,
+       closeOnClickOutside: false,
+     }).then((value) => {
+       if (value == true) {
+         swal(' Mobile Number :  0751 840 5161 \n\n Mobile Number :  0750 841 9579 \n\n'  + xerhatin, { button: 'سوپاس ' });
+       }
+     });
+   }
+
+</script>
+
+</head>
+
+
+<body>
+
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">دەربارەی ئەکادیمیا قوتابی</h4>
+            <p class="text-muted">ئەکادیمیا قوتابی-ئونلاین یا هاتیە دروستکرن بو پتر خزمەتکرنا قوتابی ب بەرهەفکرنا هەمی پسیارێن ویزاری و پسیارێن یونێت و بابەتا و هەروسا شلوڤەکرنا بابەتان ب شێوازێ ڤیدیو و نڤیسین دا قوتابی پێویستی هیچ مەلزەمەکێ نەبیت.
+              ئەڤ مەلزەمە یێت هاتینە دانان ب رێکا باشترین و زیرەکترین ماموستایا. هیڤیا مە ئەوە خزمەتا قوتابیا بکەن.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">پەیوەندیێ ب مەبکە</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://www.facebook.com/qotabi.official/" target="_blank" class="text-white">فەیسبوک</a></li>
+              <li><a href="https://www.instagram.com/qotabi.official/" target="_blank" class="text-white">ئینستگرام</a></li>
+              <li><a href="https://www.youtube.com/channel/UCpRMAc1wqRzEVT3yDDvS16A" target="_blank" class="text-white">یوتیوب</a></li>
+              <li><a href="mailto:fakher.alzibari@valpo.edu" class="text-white">ئیمێل</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+          <img src="images/Web-Logo.png" alt="" width="40px" height="40px;">
+          <strong>پەرتووکخانا ئەکادیمیا قوتابی</strong>
+
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="py-5 text-center container fakher">
+      <div class="row py-lg-5">
+        <div class="col-lg-10 col-md-8 mx-auto">
+          <h1 class="fw-light">پەرتووکخانا ئەکادیمیا قوتابی</h1>
+          <p class="text-muted">
+            دڤێ پەڕتووکخانێ دا دێ بو هەوە کورتییا پەڕتووکان بەردەست کەیین. ئەڤ پەرتووکخانەیە ژبو پێشئێخستنا بوارێ خواندنێ دناڤ مللەتێ کورد دا هاتییە دروستکرن. هیڤیا مە ئەوە ئەم بشێین خزمەتەکێ پێشکێشی هەوە بکەین. سوپاسییا هەر کەسەکی دکەین ژبو
+            هاریکارییا وان دگەل مە دا و سوپاسییا وان کەسان ژی دکەین ژبوی هنارتنا کورتیێن پەڕتووکان
+          </p>
+          <!-- <a href="about/about.html" class="btn btn-secondary my-2"> سوپاس نامە </a> -->
+
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <style>
+
+      .Play-Store-Button{
+        background-color: black;
+        color: white;
+        width: 160px;
+        border: solid 1px black;
+        border-radius: 5px;
+        padding-right: 0px;
+      }
+
+      .Get-in-on{
+        font-size: 10px;
+        display: block;
+        margin-left: -15px;
+        margin-bottom: -8px;
+      }
+
+      .google-play{
+        font-weight: 600;
+      }
+
+      .Google-Play-Image{
+        margin-top: -5px;
+        margin-left: -20px;
+        width: 40px;
+      }
+    </style>
+
+<center>
+    <div>
+      <a href="#">
+      <button class="Play-Store-Button">
+        <span class="Get-in-on">GET IT ON</span>
+        <span class="google-play">Google Play</span>
+        <img class="Google-Play-Image" src="images/Google-Play.png" alt="">
+      </button>
+      </a>
+    </div>
+  </center>
+
+
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5"> -->
+        <!-- <div class="row row-cols-2 row-cols-md-4 g-4" dir="rtl"> -->
+        <!-- <div class="row row-cols-2 row-cols-sm-4 row-cols-md-3 g-3" dir="rtl"> -->
+        <div class="row row-cols-2 row-cols-md-5 g-3" dir="ltr">
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="chirok/chirok.html">
+                <img class="Front-Images" src="images/chirok.jpg" alt="" width="100%" height="350"></a>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="ayini/ayini.html">
+                <img class="Front-Images" src="images/Ayini.jpg" alt="" width="100%" height="350"></a>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="shano/shano.html">
+                <img class="Front-Images" src="images/shano.jpg" alt="" width="100%" height="450"></a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="abori/abori.html">
+                <img class="Front-Images" src="images/abori.jpg" alt="" width="100%" height="350"></a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="helbest/helbest.html">
+                <img class="Front-Images" src="images/helbest.jpg" alt="" width="100%" height="350"></a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="zarok/zarok.html">
+                <img class="Front-Images" src="images/zarok.jpg" alt="" width="100%" height="350"></a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="handan/handan.html">
+                <img class="Front-Images" src="images/handan.jpg" alt="" width="100%" height="350"></a>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm Back-div-image">
+              <a href="shiret/shiret.html">
+                <img class="Front-Images" src="images/shiret.jpg" alt="" width="100%" height="350"></a>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+
+  </main>
+
+<center>
+
+  <div style="padding-top:20px;">
+    <button class="alertButton" onclick="hello();">!</button>
+  </div>
+
+</center>
+
+  <footer class="text-muted py-2">
+
+  </footer>
+
+  <div class="container" style="text-align: center;" dir="ltr">
+
+    <p>
+    <p> © Copyright 2020-2022</p>
+    <p>Web Developers: <br><a href="https://www.instagram.com/amed_berzinar/">Amed Abdullhemid</a> <br> <a href="https://www.instagram.com/awab_kurdi/">Awab Luqman</a> </p>
+
+    <!-- Designed by <a href="https://www.facebook.com/fakherzebari" target="_blank">Fakher Zibari</a> -->
+    </p>
+
+
+  </div>
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
